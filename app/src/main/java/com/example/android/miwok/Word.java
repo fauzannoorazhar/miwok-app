@@ -10,19 +10,19 @@ public class Word {
     private String mDefaultTranslation;
 
     /*Miwok translation for word*/
-    private String mMiwokTranslation;
+    private String mWibuTranslation;
 
     /*Construct object word*/
-    public Word(String defaultTranslation, String miwokTranslation){
+    public Word(String defaultTranslation, String wibuTranslation){
         mDefaultTranslation = defaultTranslation;
-        mMiwokTranslation = miwokTranslation;
+        mWibuTranslation = wibuTranslation;
     }
 
     public String getDefaultTranslation() {
         return mDefaultTranslation;
     }
 
-    public String getMiwokTranslation() {
-        return mMiwokTranslation;
+    public String getWibuTranslation() {
+        return mWibuTranslation;
     }
 }
