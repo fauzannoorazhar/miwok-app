@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
         // Find the View that shows the numbers category
         TextView numbers = (TextView)findViewById(R.id.numbers);
         TextView familys = (TextView)findViewById(R.id.family);
-        TextView Colors = (TextView)findViewById(R.id.colors);
-        TextView Phrases = (TextView)findViewById(R.id.phrases);
+        TextView colors = (TextView)findViewById(R.id.colors);
+        TextView phrases = (TextView)findViewById(R.id.phrases);
 
         // Set a click listener on that View
         numbers.setOnClickListener(new View.OnClickListener(){
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Colors.setOnClickListener(new View.OnClickListener() {
+        colors.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent colorsIntent = new Intent(MainActivity.this, ColorsActivity.class);
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Phrases.setOnClickListener(new View.OnClickListener() {
+        phrases.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
