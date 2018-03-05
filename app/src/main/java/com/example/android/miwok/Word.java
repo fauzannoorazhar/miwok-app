@@ -20,6 +20,8 @@ public class Word {
     /** Constant value that represents no image was provided for this word */
     private static final int NO_IMAGE_PROVIDED = -1;
 
+    private int mAudioResourceId;
+
     /**
      * Create a new Word object.
      *
@@ -46,6 +48,13 @@ public class Word {
         mDefaultTranslation = defaultTranslation;
         mWibuTranslation = wibuTranslation;
         mImageResourceId = imageResourceId;
+    }
+
+    public Word(String defaultTranslation, String wibuTranslation, int imageResourceId, int audioResourceId){
+        mDefaultTranslation = defaultTranslation;
+        mWibuTranslation = wibuTranslation;
+        mImageResourceId = imageResourceId;
+        mAudioResourceId = audioResourceId;
     }
 
     public String getDefaultTranslation() {

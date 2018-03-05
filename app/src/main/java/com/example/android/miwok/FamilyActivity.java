@@ -14,7 +14,7 @@ public class FamilyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
-        ArrayList<Word> words = new ArrayList<Word>();
+        /*ArrayList<Word> words = new ArrayList<Word>();
             words.add(new Word("Ayah","Otousan/Chichi", R.drawable.family_father));
             words.add(new Word("Ibu","Okaasan/Haha", R.drawable.family_mother));
             words.add(new Word("Kakak Laki Laki","Oniisan/Ani", R.drawable.family_older_brother));
@@ -26,8 +26,8 @@ public class FamilyActivity extends AppCompatActivity {
             words.add(new Word("Kakek","Ojichan", R.drawable.family_grandfather));
             words.add(new Word("Nenek","Sobo", R.drawable.family_grandmother));
 
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_family);
         ListView listView = (ListView) findViewById(R.id.list);
-        listView.setAdapter(adapter);
+        listView.setAdapter(adapter);*/
     }
 }

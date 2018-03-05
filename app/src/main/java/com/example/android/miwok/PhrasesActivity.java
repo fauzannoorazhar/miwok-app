@@ -13,7 +13,7 @@ public class PhrasesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
-        ArrayList<Word> words = new ArrayList<Word>();
+        /*ArrayList<Word> words = new ArrayList<Word>();
             words.add(new Word("Selamat Pagi","Ohayo Gozaimasu"));
             words.add(new Word("Selamat Siang","Konnichiwa"));
             words.add(new Word("Selamat Malam","Konbanwa"));
@@ -25,9 +25,9 @@ public class PhrasesActivity extends AppCompatActivity {
             words.add(new Word("Apakah Hari Ini Buka?","Kyo Aitemasuka"));
             words.add(new Word("Harganya Berapa","Oikura Desuka?"));
 
-        WordAdapter adapter = new WordAdapter(this,words);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_phrases);
         ListView listView = (ListView) findViewById(R.id.list);
-        listView.setAdapter(adapter);
+        listView.setAdapter(adapter);*/
 
     }
 }

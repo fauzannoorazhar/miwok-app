@@ -13,7 +13,7 @@ public class ColorsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
-        ArrayList<Word> words = new ArrayList<Word>();
+        /*ArrayList<Word> words = new ArrayList<Word>();
             words.add(new Word("Hitam","Kuroi", R.drawable.color_black));
             words.add(new Word("Putih","Shiroi", R.drawable.color_white));
             words.add(new Word("Coklat","Chairo", R.drawable.color_brown));
@@ -23,8 +23,8 @@ public class ColorsActivity extends AppCompatActivity {
             words.add(new Word("Biru","Aoi", R.drawable.color_gray));
             words.add(new Word("Ungu","Murasaki", R.drawable.color_dusty_yellow));
 
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_colors);
         ListView listView = (ListView) findViewById(R.id.list);
-        listView.setAdapter(adapter);
+        listView.setAdapter(adapter);*/
     }
 }

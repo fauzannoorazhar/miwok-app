@@ -16,10 +16,14 @@
 package com.example.android.miwok;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -67,6 +71,31 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
                 startActivity(phrasesIntent );
+            }
+        });
+
+        Button play = (Button) findViewById(R.id.buttonPlay);
+        Button stop = (Button) findViewById(R.id.buttonStop);
+
+        final MediaPlayer mp = new MediaPlayer();
+        try {
+            mp.setDataSource(Environment.getExternalStorageDirectory().getPath()+"/Music/Al Kahfi.mp3");//Write your location here
+            mp.prepare();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mp.start();
+            }
+        });
+
+        stop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mp.stop();
             }
         });
     }
