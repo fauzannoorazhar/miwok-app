@@ -16,6 +16,7 @@
 package com.example.android.miwok;
 
 import android.content.Intent;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Environment;
@@ -76,10 +77,12 @@ public class MainActivity extends AppCompatActivity {
 
         Button play = (Button) findViewById(R.id.buttonPlay);
         Button stop = (Button) findViewById(R.id.buttonStop);
+        Button pause = (Button) findViewById(R.id.buttonPause);
+        String url = "https://www.youtube.com/watch?v=s9NoBV_7yVI";
 
-        final MediaPlayer mp = new MediaPlayer();
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.himehime);
+
         try {
-            mp.setDataSource(Environment.getExternalStorageDirectory().getPath()+"/Music/Al Kahfi.mp3");//Write your location here
             mp.prepare();
         }catch (Exception e){
             e.printStackTrace();
@@ -89,6 +92,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mp.start();
+            }
+        });
+
+        pause.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mp.pause();
             }
         });
 

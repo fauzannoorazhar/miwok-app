@@ -61,6 +61,12 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Pause Music"
+            android:id="@+id/buttonPause"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Stop Music"
             android:id="@+id/buttonStop"/>
 

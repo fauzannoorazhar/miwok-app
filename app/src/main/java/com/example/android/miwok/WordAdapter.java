@@ -2,6 +2,7 @@ package com.example.android.miwok;
 
 import android.content.Context;
 import android.media.Image;
+import android.media.MediaPlayer;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -60,11 +61,26 @@ public class WordAdapter extends ArrayAdapter<Word> {
         }
 
         // Set the theme color for the list item
-        View textContainer = listItemView.findViewById(R.id.text_container);
+        View listViewTextContainer = listItemView.findViewById(R.id.text_container);
         // Find the color that the resource ID maps to
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
         // Set the background color of the text container View
-        textContainer.setBackgroundColor(color);
+        listViewTextContainer.setBackgroundColor(color);
+
+        final MediaPlayer mp = MediaPlayer.create(getContext(), words.getAudioResourceId());
+
+        try {
+            mp.prepare();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        listViewTextContainer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mp.start();
+            }
+        });
 
         return listItemView;
     }

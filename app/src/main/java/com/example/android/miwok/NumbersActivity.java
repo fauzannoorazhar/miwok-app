@@ -13,16 +13,16 @@ public class NumbersActivity extends AppCompatActivity {
         setContentView(R.layout.word_list);
 
         ArrayList<Word> words = new ArrayList<Word>();
-            words.add(new Word("Satu","Ichi", R.drawable.number_one));
-            words.add(new Word("Dua","Ni", R.drawable.number_two));
-            words.add(new Word("Tiga","San", R.drawable.number_three));
-            words.add(new Word("Empat","Yon", R.drawable.number_four));
-            words.add(new Word("Lima","Go", R.drawable.number_five));
-            words.add(new Word("Enam","Roku", R.drawable.number_six));
-            words.add(new Word("Tujuh","Nana", R.drawable.number_seven));
-            words.add(new Word("Delapan","Hachi", R.drawable.number_eight));
-            words.add(new Word("Sembilan","Kyu", R.drawable.number_nine));
-            words.add(new Word("Sepuluh","Ju", R.drawable.number_ten));
+            words.add(new Word("Satu","Ichi", R.drawable.number_one, R.raw.himehime));
+            words.add(new Word("Dua","Ni", R.drawable.number_two, R.raw.sakuramau));
+            words.add(new Word("Tiga","San", R.drawable.number_three, R.raw.himehime));
+            words.add(new Word("Empat","Yon", R.drawable.number_four, R.raw.sakuramau));
+            words.add(new Word("Lima","Go", R.drawable.number_five, R.raw.himehime));
+            words.add(new Word("Enam","Roku", R.drawable.number_six, R.raw.sakuramau));
+            words.add(new Word("Tujuh","Nana", R.drawable.number_seven, R.raw.himehime));
+            words.add(new Word("Delapan","Hachi", R.drawable.number_eight, R.raw.sakuramau));
+            words.add(new Word("Sembilan","Kyu", R.drawable.number_nine, R.raw.himehime));
+            words.add(new Word("Sepuluh","Ju", R.drawable.number_ten, R.raw.sakuramau));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
