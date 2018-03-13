@@ -75,12 +75,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button play = (Button) findViewById(R.id.buttonPlay);
+        /*Button play = (Button) findViewById(R.id.buttonPlay);
         Button stop = (Button) findViewById(R.id.buttonStop);
         Button pause = (Button) findViewById(R.id.buttonPause);
         String url = "https://www.youtube.com/watch?v=s9NoBV_7yVI";
 
-        final MediaPlayer mp = MediaPlayer.create(this, R.raw.himehime);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.number_eight);
 
         try {
             mp.prepare();
@@ -107,6 +107,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 mp.stop();
             }
-        });
+        });*/
     }
 }

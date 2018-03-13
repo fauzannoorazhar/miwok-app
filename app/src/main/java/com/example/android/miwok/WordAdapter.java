@@ -67,7 +67,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
         // Set the background color of the text container View
         listViewTextContainer.setBackgroundColor(color);
 
-        final MediaPlayer mp = MediaPlayer.create(getContext(), words.getAudioResourceId());
+        /*final MediaPlayer mp = MediaPlayer.create(getContext(), words.getAudioResourceId());
 
         try {
             mp.prepare();
@@ -80,7 +80,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
             public void onClick(View view) {
                 mp.start();
             }
-        });
+        });*/
 
         return listItemView;
     }

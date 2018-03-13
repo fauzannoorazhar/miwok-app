@@ -44,11 +44,6 @@ public class Word {
      * @param imageResourceId is the drawable resource ID for the image associated with the word
      *
      */
-    public Word(String defaultTranslation, String wibuTranslation, int imageResourceId) {
-        mDefaultTranslation = defaultTranslation;
-        mWibuTranslation = wibuTranslation;
-        mImageResourceId = imageResourceId;
-    }
 
     public Word(String defaultTranslation, String wibuTranslation, int imageResourceId, int audioResourceId){
         mDefaultTranslation = defaultTranslation;
@@ -65,7 +60,7 @@ public class Word {
         return mWibuTranslation;
     }
 
-    public int getImageResourceId(){
+    public int getImageResourceId() {
         return mImageResourceId;
     }
 
